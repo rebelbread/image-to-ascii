@@ -59,12 +59,12 @@ def create_img():
 def print_ascii(ascii_list):
     for txt in ascii_list:
         time.sleep(0.1)
+        os.system('cls')
         print(txt)
-        # os.system('cls')
 
 
 if __name__ == '__main__':
-    split_gif("1.gif")
+    split_gif(sys.argv[1])
     while 1:
         print_ascii(txt_list)
         # time.sleep(1)
